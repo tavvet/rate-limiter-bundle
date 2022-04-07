@@ -1,0 +1,35 @@
+{
+    "name": "tavvet/rate-limiter-bundle",
+    "type": "symfony-bundle",
+    "description": "Sf4.4 bundle for Symfony RateLimiter component, that provides a Token Bucket implementation to rate limit input and output in your application.",
+    "keywords": ["rate" ,"limiter", "symfony", "bundle", "rate-limiter-bundle", "rate-limiter-bundle", "rate-limiter"],
+    "homepage": "https://github.com/tavvet/symfony-rate-limiter-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Rudakov",
+            "homepage": "https://github.com/tavvet"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "symfony/lock": "^4.4",
+        "symfony/options-resolver": "^4.4",
+        "symfony/framework-bundle": "^4.4",
+        "symfony/dependency-injection": "^4.4"
+    },
+    "require-dev": {
+        "psr/cache": "^1.0|^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Component\\RateLimiter\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
